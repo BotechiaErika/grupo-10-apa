@@ -1,0 +1,42 @@
+.col-login {
+    margin: 2px solid gray;
+    border-radius: 15px;
+    vertical-align: middle;
+}
+
+.text-custom {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.brand-name {
+    color: #ff0099;
+}
+
+.nuevoSocio {
+    color: #077409;
+}
+
+.btnCustom {
+    max-width: 390px;
+    max-height: 100px;
+    background-color: #F52ECA;
+    color: white;
+    border: 2px solid #FDC1F0;
+    border-radius: 15px;
+}
+
+.btnCustom:hover {
+    background-color: #7dff03;
+    border: 2px solid #000002;
+    color: #15010f;
+    transition: background-color 5s;
+}
+
+.btnCustom:visited {
+    background-color: #fad801;
+    border: 2px solid rgba(242, 116, 192, 0.35);
+    color: #15010f;
+}
