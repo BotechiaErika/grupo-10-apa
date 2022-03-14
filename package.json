@@ -1,0 +1,24 @@
+{
+    "name": "grupo-10-apa",
+    "version": "1.0.0",
+    "description": "grupo 10 apa nuevo directorio en construccion ",
+    "main": "./src/app.js",
+    "scripts": {
+        "test": "npm run test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/BotechiaErika/grupo-10-apa.git"
+    },
+    "author": "BotechiaErika and SuarezRocio",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/BotechiaErika/grupo-10-apa/issues"
+    },
+    "homepage": "https://github.com/BotechiaErika/grupo-10-apa#readme",
+    "dependencies": {
+        "ejs": "^3.1.6",
+        "express": "^4.17.3",
+        "nodemon": "^2.0.15"
+    }
+}
