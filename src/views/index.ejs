@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <%- include('./partials/head'); %>
+        <link rel="stylesheet" href="../stylesheets/style_index.css" type="text/css">
+
+        <title>
+            <%= title %> BIEN-VENID@S</title>
+        <!--FONT AWESOME  -->
+
+</head>
+
+<body class="bodyPage">
+    <%- include('./partials/navbarTop'); %>
+        <section class="div2">
+
+            <div class="container">
+                <div id="marketing" class="section">
+                    <div class="content">
+                        <a href="/empresas" class="nav-link">
+                            <h1 class="textIndex"><span class="apaColor">APA!</span><br/> EMPRESAS </h1>
+                        </a>
+                    </div>
+                    <div class="overlay"></div>
+                </div>
+
+                <div id="technology" class="section">
+                    <div class="content">
+                        <a class="nav-link" href="/home">
+                            <h1 class="textIndex"><span class="apaColor">APA!</span><br/> HOME</h1>
+                        </a>
+                    </div>
+                    <div class="overlay"></div>
+                </div>
+
+                <div id="advertising" class="section">
+                    <div class="content">
+                        <a href="/login" class="nav-link">
+                            <h1 class="textIndex"><span class="apaColor">APA!</span><br/>LOGIN</h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+
+            </div>
+            </a>
+        </section>
+
+        <%- include('./partials/navbarBottom'); %>
+</body>
+
+</html>
