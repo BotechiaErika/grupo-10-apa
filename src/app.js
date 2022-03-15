@@ -5,7 +5,11 @@ const productsRouters = require('./routes/productsRoutes.js')
 const express = require('express')
 const path = require('path')
 const app = express()
-
+    //ACTUALIZANDO ENTRY-POINT CON CLASSE CRUD
+const methodOverride = require('method-override');
+app.use(methodOverride('_method'));
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 
 app.use(express.static(path.join(__dirname, './../public')));
 // view engine setup
@@ -17,7 +21,8 @@ app.use(express.static(path.join(__dirname, './../public')));
 app.use('/', mainRouter)
 app.use('/empresas', empresaRouter)
 app.use('/usuarios', userRouter)
-app.use('/productos', productsRouters);
+app.use('/productos', productsRouters)
+app.use('/*', (req, res) => { res.render('error404') })
 
 app.listen(process.env.PORT || 9698, () => {
     console.log('server corriendo port 9698')
