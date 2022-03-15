@@ -7,9 +7,7 @@ const path = require('path')
 const app = express()
     //app.use --> uso middleware
 
-app.listen(process.env.PORT || 9698, function() {
-    console.log('server corriendo port 9698')
-});
+
 app.use(express.static(path.join(__dirname, './../public')));
 //;ACTUALIZANDO ENTRY-POINT CON CLASSE CRUD
 const methodOverride = require('method-override');
@@ -29,4 +27,8 @@ app.use('/', mainRouter)
 app.use('/empresas', empresaRouter)
 app.use('/usuarios', userRouter)
 app.use('/productos', productsRouters)
-app.use('/*', (req, res) => { res.render('error404') })
+app.use('/*', (req, res) => { res.render('error404') }) app.listen(3000)
+
+app.listen(3000, function()) {
+    console.log(`corriendo en 3000`)
+}
