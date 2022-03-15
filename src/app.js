@@ -1,21 +1,17 @@
+const express = require('express')
+const path = require('path')
 const mainRouter = require('./routes/mainRoutes.js')
 const empresaRouter = require('./routes/empresasRoutes.js')
 const userRouter = require('./routes/usersRoutes.js')
 const productsRouters = require('./routes/productsRoutes.js')
-const express = require('express')
-const path = require('path')
 const app = express()
-app.use(express.static(path.join(__dirname, './../public')));
-//ACTUALIZANDO ENTRY-POINT CON CLASSE CRUD
+require('dotenv').config
 const methodOverride = require('method-override');
 app.use(methodOverride('_method'));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-
 app.use(express.static(path.join(__dirname, './../public')));
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
+app.use(express.static(path.join(__dirname, './../public')));
 app.use('/', mainRouter)
 app.use('/empresas', empresaRouter)
 app.use('/usuarios', userRouter)
