@@ -1,5 +1,6 @@
 const mainRouter = require('./routes/mainRoutes.js')
 const empresaRouter = require('./routes/empresasRoutes.js')
+const userRouter = require('./routes/usersRoutes.js')
 const express = require('express')
 const path = require('path')
 const app = express()
@@ -14,7 +15,7 @@ app.use(express.static(path.join(__dirname, './../public')));
 
 app.use('/', mainRouter)
 app.use('/empresas', empresaRouter)
-
+app.use('/usuarios', userRouter)
 
 app.listen(process.env.PORT || 9698, () => {
     console.log('server corriendo port 9698')

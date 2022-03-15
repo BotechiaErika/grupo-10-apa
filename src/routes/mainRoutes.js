@@ -7,4 +7,5 @@ const router = express.Router();
 router.get('/', mainController.indexPage)
 router.get('/home', mainController.landingUser)
 router.get('/empresas', mainController.empresas)
+router.get('/usuarios', mainController.iniciarSeccion)
 module.exports = router

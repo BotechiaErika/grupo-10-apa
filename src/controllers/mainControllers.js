@@ -7,6 +7,9 @@ let controller = {
     },
     empresas: (req, res) => {
         res.render('empresas/loginEmpresa', { title: "Login EMPRESAS" });
+    },
+    iniciarSeccion: (req, res) => {
+        res.render('users/loginUser', { title: "Iniciar Seccion" });
     }
 }
 
