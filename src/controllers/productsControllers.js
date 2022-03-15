@@ -50,7 +50,7 @@ let controller = {
         })
     },
     comunasCABA: (req, res) => {
-        res.render('products/comunasProducts', {
+        res.render('products/productsXComuna', {
             title: 'Productos Comuna 01 y 02',
             comunaID: 2,
             comunaIncludes: "Retiro, San Nicolás, Puerto Madero, San Telmo, Montserrat y Constitución",
@@ -58,7 +58,7 @@ let controller = {
         })
     },
     comunasCABA1: (req, res) => {
-        res.render('products/comunasProducts', {
+        res.render('products/productsXComuna', {
             title: 'Productos Comuna 02 y 03'
         })
     },
