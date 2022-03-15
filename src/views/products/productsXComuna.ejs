@@ -27,8 +27,8 @@
             </header>
 
             <div class="navegacion">
-                <a class="navegacion__enlace" href="nosotros.html">
-                    <%=f%>
+                <a class="navegacion__enlace" href=">
+
                 </a>
             </div>
 
@@ -36,15 +36,17 @@
                 <h1>Nuestros Productos</h1>
 
                 <div class="grid">
-                    <div class="producto">
-                        <a href="producto.html">
-                            <img src="https://live.staticflickr.com/65535/51925353464_b8d92e0872_o.png" alt="img-cart" class="img-fluid rounded" />
+                    <div class="producto" id="<%for p of%> pDestaque01">
+                       forEach(let i = 0 ; i <=2 ; i ++;{%>
+                        <a href="/<%=urlP[i]%>>">
+                            <img src="<%imgPD[i]%>" alt="img-cart" class="img-fluid rounded" />
                             <div class="producto__informacion">
                                 <p class="producto__nombre">VueJS</p>
                                 <p class="producto__precio">$25</p>
                             </div>
                         </a>
                     </div>
+                    <%}%>
                     <!--.producto-->
                     <div class="producto">
                         <a href="producto.html">

@@ -5,11 +5,8 @@ const productsRouters = require('./routes/productsRoutes.js')
 const express = require('express')
 const path = require('path')
 const app = express()
-    //app.use --> uso middleware
-
-
 app.use(express.static(path.join(__dirname, './../public')));
-//;ACTUALIZANDO ENTRY-POINT CON CLASSE CRUD
+//ACTUALIZANDO ENTRY-POINT CON CLASSE CRUD
 const methodOverride = require('method-override');
 app.use(methodOverride('_method'));
 app.use(express.urlencoded({ extended: false }));
@@ -19,16 +16,13 @@ app.use(express.static(path.join(__dirname, './../public')));
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-
-
-
-
 app.use('/', mainRouter)
 app.use('/empresas', empresaRouter)
 app.use('/usuarios', userRouter)
 app.use('/productos', productsRouters)
-app.use('/*', (req, res) => { res.render('error404') }) app.listen(3000)
+app.use('/*', (req, res) => { res.render('error404') })
+app.listen(process.env.PORT||6969,()=>{
+    console.log('corriendo en 6969')
+})
 
-app.listen(3000, function()) {
-    console.log(`corriendo en 3000`)
-}
+module.exports = app.js
