@@ -34,6 +34,6 @@ app.use('/productos', productsRouters)
 app.use('/*', function(req, res) {
     res.render('main/error404')
 })
-app.listen(process.env.PORT || 9698, function() {
-    console.log('running on 9698')
+app.listen(process.env.PORT || 7797, function() {
+    console.log('running on 7797')
 })

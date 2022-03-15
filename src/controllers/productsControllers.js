@@ -1,3 +1,5 @@
+const fs = require('fs')
+const path = require('path') heroku logs--tail
 let controller = {
     landingProductos: (req, res) => {
         res.render('products/landingProducts', {
@@ -49,48 +51,19 @@ let controller = {
             comunaParagphy15: "Contenido en CONSTRUCCION para MEJOR ATENDER A SUS PEDIDOS",
         })
     },
-    comunasCABA: (req, res) => {
-        res.render('products/productsXComuna', {
-            title: 'Productos Comuna 01 y 02',
-            comunaID: 2,
-            comunaIncludes: "Retiro, San Nicolás, Puerto Madero, San Telmo, Montserrat y Constitución",
-            comunaParaghy: "La Comuna 1 está integrada por los 	barrios de  Retiro, San Nicolás, Puerto Madero, San Telmo, Montserrat y Constitución."
-        })
-    },
-    comunasCABA1: (req, res) => {
-        res.render('products/productsXComuna', {
-            title: 'Productos Comuna 02 y 03'
-        })
-    },
-    comunasCABA2: (req, res) => {
-        res.render('products/comunasProducts', {
-            title: 'Productos Comuna 03 y 04'
-        })
-    },
-    comunasCABA3: (req, res) => {
-        res.render('products/comunasProducts', {
-            title: 'Productos Comuna 04 y 05'
-        })
-    },
-    comunasCABA4: (req, res) => {
-        res.render('products/comunasProducts', {
-            title: 'Productos Comuna 06 y 07'
-        })
-    },
-    comunasCABA5: (req, res) => {
-        res.render('products/comunasProducts', {
-            title: 'Productos Comuna 08 y 09'
-        })
-    },
-    comunasCABA6: (req, res) => {
-        res.render('products/comunasProducts', {
-            title: 'Productos Comuna 10 y 11'
-        })
-    },
-    comunasCABA7: (req, res) => {
-        res.render('products/comunasProducts', {
-            title: 'Productos Comuna 11 y 12'
-        })
-    },
+    detalles: (req, res) => {
+            res.render('products/localDetails', { title: 'detail' })
+        }
+        //comunasCABA: (req, res) => {
+        //    const pageID = req.params.pageID
+        //    res.render('products/productsXComuna', {
+        //        title,
+        //        comunaID,
+        //        comunaIncludes,
+        //        comunaParaghy,
+        //        dobleID
+        //    })
+        //}
 }
+
 module.exports = controller
