@@ -3,7 +3,8 @@ let controller = {
         res.render('index', { title: "APA" });
     },
     empresas: (req, res) => {
-        res.render('empresas/loginEmpresa', { title: "Login EMPRESAS!" });
+        res.render('empresas/loginEmpresa', { title: "Login EMPRESAS" });
     }
-};
+
+}
 module.exports = controller
