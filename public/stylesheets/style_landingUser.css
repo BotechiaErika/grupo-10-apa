@@ -118,7 +118,6 @@
     padding: 10px;
 }
 
-.bg-frame-03 {
-    background-color: #060004;
-    background-image: url(../images/svg/bg-03.svg);
+.bg-dark-custom {
+    background-image: url('../images/svg/bg-03.svg')
 }

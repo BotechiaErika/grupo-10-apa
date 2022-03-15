@@ -6,6 +6,6 @@ const router = express.Router();
 /* ROUTER PARA COLLECCION MAIN  */
 router.get('/', mainController.indexPage)
 router.get('/home', mainController.landingUser)
-router.get('/empresas', mainController.empresas)
-router.get('/usuarios', mainController.iniciarSeccion)
+router.get('/empresas', mainController.iniciarSeccion)
+router.get('/usuarios', mainController.ingresarCuenta)
 module.exports = router
