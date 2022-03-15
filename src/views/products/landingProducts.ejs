@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="APA AFTER-NIGHT" content="BUSCADOR DE TELOS, TELOS SEARCH ENGINE, TELOS ARGENTINA, ARGENTINA, CABA, TELOS-CABA">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%- include('../partials/head'); %>
+        <link rel='stylesheet' href='/stylesheets/style.css' type="text/css" />
+        <link rel='stylesheet' href='/stylesheets/style_landingProducts.css' type="text/css" />
+        <!--FONT AWESOME  -->
+        <script src="https://kit.fontawesome.com/0c502158eb.js " crossorigin="anonymous "></script>
+        <title>APA!
+            <%= title ;%>
+        </title>
+
+</head>
+
+<body class="bodyPage bg-light">
+    <%- include('../partials/navbarTop'); %>
+
+        <div class="div2 bg-light">
+            <header class="header w-100 text-center ">
+                <div class="hero bg-light">
+                    <div class="px-2 py-2 my-9 text-center">
+                    </div>
+                    <h1 class="display-2 fw-bold h101"><span class="apa-name">APA!</span>CABA</h1>
+                    <p class="herod "> FACILIDAD, VENTAJAS y PLACER ahora en tu celu con APA! app!</p>
+                    <div class="row">
+                        <div class=" col-12 py-20 mg-20 ">
+                            <img class="image-responsive " src="https://live.staticflickr.com/65535/51885269432_5f9573f335_o.png" alt="app apa " height="300px " />
+                            <p class="herod mg-3"> </p>
+                        </div>
+            </header>
+
+            <body class="container bg-light">
+                <div class="row">
+
+                    <!-- Card 1 -->
+                    <div class="col-md-4 card-container">
+                        <div class="card-flip">
+                            <!-- Card 2 Front -->
+                            <div class="card front">
+                                <img src="https://live.staticflickr.com/65535/51930776611_573237a898_o.png" class="card-img-top img-fluid">
+                                <div class="card-block" id="divC1front">
+                                    <h4 class="card-title">
+                                        Comuna
+                                        <p>
+                                            <%= comunaID ;%>
+                                        </p>
+                                    </h4>
+                                    <p class="card-text">
+                                        <%= comunaIncludes%>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- End Card 1 Front -->
+
+                            <!-- Card 1 Back -->
+                            <div class="card back">
+                                <div class="card-header">
+                                    C.A.B.A.
+                                </div>
+                                <div class="card-block">
+                                    <h4 class="card-title">COMUNA
+                                        <%= comunaID ;%>
+                                    </h4>
+                                    <p class="card-text">
+                                        <%= comunaParagphy ;%>.</p>
+                                    <a href="/productos/comunas1y2" class="btn btn-primary">APA! MOSTRA</a>
+                                </div>
+                            </div>
+                            <!-- End Card 1 Back -->
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-md-4 card-container">
+                        <div class="card-flip">
+                            <!-- Card 2 Front -->
+                            <div class="card front">
+                                <img src="https://live.staticflickr.com/65535/51931299427_2281f3a92d_o.png" class="card-img-top img-fluid">
+                                <div class="card-block" id="divC2front">
+                                    <h4 class="card-title">
+                                        Comuna
+                                        <p>
+                                            <%= comunaID2 ;%>
+                                        </p>
+                                    </h4>
+                                    <p class="card-text">
+                                        <%= comunaIncludes2%>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- End Card 2 Front -->
+
+                            <!-- Card 2 Back -->
+                            <div class="card back">
+                                <div class="card-header">
+                                    C.A.B.A.
+                                </div>
+                                <div class="card-block">
+                                    <h4 class="card-title">COMUNA
+                                        <%= comunaID2 ;%>
+                                    </h4>
+                                    <p class="card-text">
+                                        <%= comunaParagphy2 ;%>.</p>
+                                    <a href="/productos/comunas2y3" class="btn btn-primary">APA! MOSTRA</a>
+                                </div>
+                            </div>
+                            <!-- End Card 2 Back -->
+                        </div>
+                    </div>
+                    <!-- End Card 2 -->
+
+                    <!-- Card 3 -->
+                    <div class="col-md-4 card-container">
+                        <div class="card-flip">
+                            <!-- Card 3 Front -->
+                            <div class="card front">
+                                <img src="https://live.staticflickr.com/65535/51932357033_aa6f098015_o.png" class="card-img-top img-fluid">
+                                <div class="card-block" id="divC3front">
+                                    <h4 class="card-title">
+                                        Comuna
+                                        <p>
+                                            <%= comunaID3 ;%>
+                                        </p>
+                                    </h4>
+                                    <p class="card-text">
+                                        <%= comunaIncludes3%>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- End Card 3 Front -->
+
+                            <!-- Card 3 Back -->
+                            <div class="card back">
+                                <div class="card-header">
+                                    C.A.B.A.
+                                </div>
+                                <div class="card-block">
+                                    <h4 class="card-title">COMUNA
+                                        <%= comunaID3 ;%>
+                                    </h4>
+                                    <p class="card-text">
+                                        <%= comunaParagphy3 ;%>.</p>
+                                    <a href="/productos/comunas3y4" class="btn btn-primary">APA! MOSTRA</a>
+                                </div>
+                            </div>
+                            <!-- End Card 3 Back -->
+                            <!-- End Card 3 Back -->
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+
+                    <div class="col-md-4 card-container">
+                        <div class="card-flip">
+                            <!-- Card 4 Front -->
+                            <div class="card front">
+                                <img src="https://live.staticflickr.com/65535/51931299707_c0b5726679_o.png" class="card-img-top img-fluid">
+                                <div class="card-block">
+                                    <h4 class="card-title">
+                                        Comuna
+                                        <p>
+                                            <%= comunaID4 ;%>
+                                        </p>
+                                    </h4>
+                                    <p class="card-text">
+                                        <%= comunaIncludes4%>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- End Card 4 Front -->
+
+                            <!-- Card 4 Back -->
+                            <div class="card back">
+                                <div class="card-header">
+                                    C.A.B.A.
+                                </div>
+                                <div class="card-block">
+                                    <h4 class="card-title">COMUNA
+                                        <%= comunaID4 ;%>
+                                    </h4>
+                                    <p class="card-text">
+                                        <%= comunaParagphy4 ;%>.</p>
+                                    <a href="/productos/comunas3y4" class="btn btn-primary">APA! MOSTRA</a>
+                                </div>
+                            </div>
+                            <!-- End Card 4 Back -->
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="col-md-4 card-container">
+                        <div class="card-flip">
+                            <!-- Card 5 Front -->
+                            <div class="card front">
+                                <img src="https://live.staticflickr.com/65535/51932356783_9c6188276a_o.png" class="card-img-top img-fluid">
+                                <div class="card-block">
+                                    <h4 class="card-title">
+                                        Comuna
+                                        <p>
+                                            <%= comunaID5 ;%>
+                                        </p>
+                                    </h4>
+                                    <p class="card-text">
+                                        <%= comunaIncludes5%>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- End Card 5 Front -->
+
+                            <!-- Card 5 Back -->
+                            <div class="card back">
+                                <div class="card-header">
+                                    C.A.B.A.
+                                </div>
+                                <div class="card-block">
+                                    <h4 class="card-title">COMUNA
+                                        <%= comunaID5 ;%>
+                                    </h4>
+                                    <p class="card-text">
+                                        <%= comunaParagphy5 ;%>.</p>
+                                    <a href="/productos/comunas5y6" class="btn btn-primary">APA! MOSTRA</a>
+                                </div>
+                            </div>
+                            <!-- End Card 5 Back -->
+                        </div>
+                    </div>
+                    <!-- End Card 5 -->
+
+                    <!--            CARD 6-->
+                    <div class="col-md-4 card-container">
+                        <div class="card-flip">
+                            <!-- Card 6 Front -->
+                            <div class="card front">
+                                <img src="https://live.staticflickr.com/65535/51932279611_3a09bd09e6_o.png" class="card-img-top img-fluid">
+                                <div class="card-block">
+                                    <h4 class="card-title">
+                                        Comuna
+                                        <p>
+                                            <%= comunaID6 ;%>
+                                        </p>
+                                    </h4>
+                                    <p class="card-text">
+                                        <%= comunaIncludes6%>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- End Card 6 Front -->
+
+                            <!-- Card 6 Back -->
+                            <div class="card back">
+                                <div class="card-header">
+                                    C.A.B.A.
+                                </div>
+                                <div class="card-block">
+                                    <h4 class="card-title">COMUNA
+                                        <%= comunaID6 ;%>
+                                    </h4>
+                                    <p class="card-text">
+                                        <%= comunaParagphy6 ;%>.</p>
+                                    <a href="/productos/comunas5y6" class="btn btn-primary">APA! MOSTRA</a>
+                                </div>
+                            </div>
+                            <!-- End Card 6 Back -->
+                        </div>
+                    </div>
+
+                    <!-- Card 7 Front -->
+
+                    <div class="col-md-4 card-container">
+                        <div class="card-flip">
+                            <!-- Card 7 Front -->
+                            <div class="card front">
+                                <img src="https://live.staticflickr.com/65535/51937488067_0f7029922f_o.png" class="card-img-top img-fluid">
+                                <div class="card-block">
+                                    <h4 class="card-title">
+                                        Comuna
+                                        <p>
+                                            <%= comunaID7 ;%>
+                                        </p>
+                                    </h4>
+                                    <p class="card-text">
+                                        <%= comunaIncludes7%>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- End Card 7 Front -->
+
+                            <!-- Card 7 Back -->
+                            <div class="card back">
+                                <div class="card-header">
+                                    C.A.B.A.
+                                </div>
+                                <div class="card-block">
+                                    <h4 class="card-title">COMUNA
+                                        <%= comunaID7 ;%>
+                                    </h4>
+                                    <p class="card-text">
+                                        <%= comunaParagphy7 ;%>.</p>
+                                    <a href="#" class="btn btn-primary">EN CONSTRUCCION</a>
+                                </div>
+                            </div>
+                            <!-- End Card 7 Back -->
+                        </div>
+                    </div>
+                    <!-- Card 8 -->
+                    <div class="col-md-4 card-container">
+                        <div class="card-flip">
+                            <!-- Card 8 Front -->
+                            <div class="card front">
+                                <img src="https://live.staticflickr.com/65535/51937488067_0f7029922f_o.png" class="card-img-top img-fluid">
+                                <div class="card-block">
+                                    <h4 class="card-title">
+                                        Comuna
+                                        <p>
+                                            <%= comunaID8 ;%>
+                                        </p>
+                                    </h4>
+                                    <p class="card-text">
+                                        <%= comunaIncludes8%>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- End Card 8 Front -->
+
+                            <!-- Card 8 Back -->
+                            <div class="card back">
+                                <div class="card-header">
+                                    C.A.B.A.
+                                </div>
+                                <div class="card-block">
+                                    <h4 class="card-title">COMUNA
+                                        <%= comunaID8 ;%>
+                                    </h4>
+                                    <p class="card-text">
+                                        <%= comunaParagphy8 ;%>.</p>
+                                    <a href="#" class="btn btn-primary">EN CONSTRUCCION</a>
+                                </div>
+                            </div>
+                            <!-- End Card 8 Back -->
+                        </div>
+                    </div>
+                    <!-- End Card 8 -->
+
+                    <!-- Card 9 -->
+
+                    <div class="col-md-4 card-container">
+                        <div class="card-flip">
+                            <!-- Card 9 Front -->
+                            <div class="card front">
+                                <img src="https://live.staticflickr.com/65535/51937488067_0f7029922f_o.png" class="card-img-top img-fluid">
+                                <div class="card-block">
+                                    <h4 class="card-title">
+                                        Comuna
+                                        <p>
+                                            <%= comunaID9 ;%>
+                                        </p>
+                                    </h4>
+                                    <p class="card-text">
+                                        <%= comunaIncludes9; %>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- End Card 9 Front -->
+
+                            <!-- Card 9 Back -->
+                            <div class="card back">
+                                <div class="card-header">
+                                    C.A.B.A.
+                                </div>
+                                <div class="card-block">
+                                    <h4 class="card-title">COMUNA
+                                        <%= comunaID9 ;%>
+                                    </h4>
+                                    <p class="card-text">
+                                        <%= comunaParagphy9 ;%>.</p>
+                                    <a href="#" class="btn btn-primary">EN CONSTRUCCION</a>
+                                </div>
+                            </div>
+                            <!-- End Card 9 Back -->
+                        </div>
+                    </div>
+
+                    <!-- Card 10 -->
+                    <div class="col-md-4 card-container">
+                        <div class="card-flip">
+                            <!-- Card 10 Front -->
+                            <div class="card front">
+                                <img src="https://live.staticflickr.com/65535/51937488067_0f7029922f_o.png" class="card-img-top img-fluid">
+                                <div class="card-block">
+                                    <h4 class="card-title">
+                                        Comuna
+                                        <p>
+                                            <%= comunaID10 ;%>
+                                        </p>
+                                    </h4>
+                                    <p class="card-text">
+                                        <%= comunaIncludes10 ; %>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- End Card 10 Front -->
+
+                            <!-- Card 10 Back -->
+                            <div class="card back">
+                                <div class="card-header">
+                                    C.A.B.A.
+                                </div>
+                                <div class="card-block">
+                                    <h4 class="card-title">COMUNA
+                                        <%= comunaID10 ;%>
+                                    </h4>
+                                    <p class="card-text">
+                                        <%= comunaParagphy10 ;%>.</p>
+                                    <a href="#" class="btn btn-primary">EN CONSTRUCCION</a>
+                                </div>
+                            </div>
+                            <!-- End Card10 Back -->
+                        </div>
+                    </div>
+                    <!-- FINAL Card 10 -->
+
+                    <!-- Card11 -->
+                    <div class="col-md-4 card-container">
+                        <div class="card-flip">
+                            <!-- Card 11 Front -->
+                            <div class="card front">
+                                <img src="https://live.staticflickr.com/65535/51937488067_0f7029922f_o.png" class="card-img-top img-fluid">
+                                <div class="card-block">
+                                    <h4 class="card-title">
+                                        Comuna
+                                        <p>
+                                            <%= comunaID11 ;%>
+                                        </p>
+                                    </h4>
+                                    <p class="card-text">
+                                        <%= comunaIncludes11 ; %>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- End Card 10 Front -->
+
+                            <!-- Card 10 Back -->
+                            <div class="card back">
+                                <div class="card-header">
+                                    C.A.B.A.
+                                </div>
+                                <div class="card-block">
+                                    <h4 class="card-title">COMUNA
+                                        <%= comunaID11 ;%>
+                                    </h4>
+                                    <p class="card-text">
+                                        <%= comunaParagphy11 ;%>.</p>
+                                    <a href="#" class="btn btn-primary">EN CONSTRUCCION</a>
+                                </div>
+                            </div>
+                            <!-- End Card11 Back -->
+                        </div>
+                    </div>
+                    <!-- FINAL Card 11 -->
+
+
+                    <!--            CARD 12-->
+
+                    <!-- Card11 -->
+                    <div class="col-md-4 card-container">
+                        <div class="card-flip">
+                            <!-- Card 12 Front -->
+                            <div class="card front">
+                                <img src="https://live.staticflickr.com/65535/51937488067_0f7029922f_o.png" class="card-img-top img-fluid">
+                                <div class="card-block">
+                                    <h4 class="card-title">
+                                        Comuna
+                                        <p>
+                                            <%= comunaID12 ;%>
+                                        </p>
+                                    </h4>
+                                    <p class="card-text">
+                                        <%= comunaIncludes12 ; %>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- End Card 12 Front -->
+
+                            <!-- Card 12 Back -->
+                            <div class="card back">
+                                <div class="card-header">
+                                    C.A.B.A.
+                                </div>
+                                <div class="card-block">
+                                    <h4 class="card-title">COMUNA
+                                        <%= comunaID12 ;%>
+                                    </h4>
+                                    <p class="card-text">
+                                        <%= comunaParagphy12 ;%>.</p>
+                                    <a href="#" class="btn btn-primary">EN CONSTRUCCION</a>
+                                </div>
+                            </div>
+                            <!-- End Card12 Back -->
+                        </div>
+                    </div>
+                    <!-- FINAL Card 12 -->
+
+
+                    <!-- Card 13 -->
+
+                    <div class="col-md-4 card-container">
+                        <div class="card-flip">
+                            <!-- Card 13 Front -->
+                            <div class="card front">
+                                <img src="https://live.staticflickr.com/65535/51937488067_0f7029922f_o.png" class="card-img-top img-fluid">
+                                <div class="card-block">
+                                    <h4 class="card-title">
+                                        Comuna
+                                        <p>
+                                            <%= comunaID13 ;%>
+                                        </p>
+                                    </h4>
+                                    <p class="card-text">
+                                        <%= comunaIncludes13%>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- End Card 13 Front -->
+
+                            <!-- Card 13 Back -->
+                            <div class="card back">
+                                <div class="card-header">
+                                    C.A.B.A.
+                                </div>
+                                <div class="card-block">
+                                    <h4 class="card-title">COMUNA
+                                        <%= comunaID13 ;%>
+                                    </h4>
+                                    <p class="card-text">
+                                        <%= comunaParagphy13 ;%>.</p>
+                                    <a href="#" class="btn btn-primary">EN CONSTRUCCION</a>
+                                </div>
+                            </div>
+                            <!-- End Card 13Back -->
+                        </div>
+                    </div>
+                    <!-- End Card 13 -->
+
+
+                    <!--            CARD 14-->
+
+                    <!-- Card14 -->
+                    <div class="col-md-4 card-container">
+                        <div class="card-flip">
+                            <!-- Card 14 Front -->
+                            <div class="card front">
+                                <img src="https://live.staticflickr.com/65535/51937488067_0f7029922f_o.png" class="card-img-top img-fluid">
+                                <div class="card-block">
+                                    <h4 class="card-title">
+                                        Comuna
+                                        <p>
+                                            <%= comunaID14 ; %>
+                                        </p>
+                                    </h4>
+                                    <p class="card-text">
+                                        <%= comunaIncludes14 ; %>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- End Card 14 Front -->
+
+                            <!-- Card 14 Back -->
+                            <div class="card back">
+                                <div class="card-header">
+                                    C.A.B.A.
+                                </div>
+                                <div class="card-block">
+                                    <h4 class="card-title">COMUNA
+                                        <%= comunaID14 ;%>
+                                    </h4>
+                                    <p class="card-text">
+                                        <%= comunaParagphy14 ;%>.</p>
+                                    <a href="#" class="btn btn-primary">EN CONSTRUCCION</a>
+                                </div>
+                            </div>
+                            <!-- End Card11 Back -->
+                        </div>
+                    </div>
+                    <!-- FINAL Card 14 -->
+
+                    <!--            CARD 12-->
+                    <div class="col-md-4 card-container">
+                        <div class="card-flip">
+                            <!-- Card 15 Front -->
+                            <div class="card front">
+                                <img src="https://live.staticflickr.com/65535/51937488067_0f7029922f_o.png" class="card-img-top img-fluid">
+                                <div class="card-block">
+                                    <h4 class="card-title">
+                                        Comuna
+                                        <p>
+                                            <%= comunaID15 ;%>
+                                        </p>
+                                    </h4>
+                                    <p class="card-text">
+                                        <%= comunaIncludes15%>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- End Card 15 Front -->
+
+                            <!-- Card 15 Back -->
+                            <div class="card back">
+                                <div class="card-header">
+                                    C.A.B.A.
+                                </div>
+                                <div class="card-block">
+                                    <h4 class="card-title">
+                                        Comuna
+                                        <p>
+                                            <%= comunaID15 ;%>
+                                        </p>
+                                    </h4>
+                                    <p class="card-text">
+                                        <%= comunaIncludes15 %>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- End Card 15 Back -->
+                        </div>
+                    </div>
+                    <!-- End Card 15 -->
+
+                    <%- include('../partials/footer'); %>
+                </div>
+                <%- include('../partials/navbarBottom'); %>
+            </body>
+
+</html>
