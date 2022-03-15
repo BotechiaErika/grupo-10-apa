@@ -32,42 +32,29 @@
                                 <h2 class="text-custom "><span class="brand-name ">APA!</span> LOGIN</h2>
                             </div>
                         </div>
-
-                        <form class="user ">
-
+                        <!-- POST PARA CREAR NUEVO REGISTRO,  -->
+                        <form class="user " method="POST" action="dashboardUser.ejs">
                             <div class="form-group ">
-
                                 <input type="email " class="form-control form-control-user " id="exampleInputEmail " aria-describedby="emailHe " placeholder="Ingrese Usuario ">
-
                             </div>
-
                             <div class="form-group ">
-
                                 <input type="password " class="form-control form-control-user " id="exampleInputPassword " placeholder="Password ">
                             </div>
-
                             <div class="form-group ">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" id="clickLogin">
                                     <label class="form-check-label" for="clickLogin">
                             Mantener LOGUEADO
-
                     </div>
                     <a href="/miCuenta " class="btn btn-primary btn-block ">
                         Login
                     </a>
-                    <a class="small " href="forgot-password.html ">Olvidaste CONTRASEÑA?</a>
-
+                    <a class="small " href="/forgotPassword ">Olvidaste CONTRASEÑA?</a>
                     <hr>
-
-                    <div class="container w-100 my-5 ">
-
+                    <div class="container w-10 my-5 ">
                         <div class="row text-center ">
             </form>
-
-
         </div>
-
         <div class="text-center ">
         <h3 class="nuevoSocio">NUEVO SOCIO?</h3>
         <a type="button" href="/usuarios/crearCuenta" class="btn btn-primary btn-lg btnCustom">CREAR Cuenta</a>

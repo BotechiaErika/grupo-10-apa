@@ -28,10 +28,6 @@ app.use('/usuarios', userRouter)
 app.use('/productos', productsRouters)
 app.use('/*', (req, res) => { res.render('error404') })
 
-app.listen(process.env.PORT || 9698, () => {
+app.listen(process.env.PORT || 9698, function() {
     console.log('server corriendo port 9698')
 });
-
-module.exports = app
-
-module.exports = app

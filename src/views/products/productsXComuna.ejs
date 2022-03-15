@@ -21,15 +21,16 @@
     <%- include('../partials/navbarTop'); %>
         <div class="div2">
             <header class="header ">
-                <a href="index.html">
-                    <h1 class="header__logo" class="Logotipo"> <span class="apa-name">APA! CABA</span> <br><span class="text-light">COMUNAS</span></h1>
+                <a href="/productos">
+                    <h1 class="header__logo" class="Logotipo"> <span class="apa-name">APA! CABA</span> <br><span class="text-light"><%=title %></span></h1>
                 </a>
             </header>
 
-            <nav class="navegacion">
-                <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Tienda</a>
-                <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
-            </nav>
+            <div class="navegacion">
+                <a class="navegacion__enlace" href="nosotros.html">
+                    <%=f%>
+                </a>
+            </div>
 
             <main class="contenedor">
                 <h1>Nuestros Productos</h1>
@@ -183,8 +184,9 @@
 </main>
 <footer>
 <%- include('../partials/footer'); %>
-</footer>
-</div>
-<%- include('../partials/navbarBottom'); %>
+                        </footer>
+            </div>
+            <%- include('../partials/navbarBottom'); %>
 </body>
+
 </html>

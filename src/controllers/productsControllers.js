@@ -51,15 +51,17 @@ let controller = {
     },
     comunasCABA: (req, res) => {
         res.render('products/productsXComuna', {
-            title: 'Productos Comuna 01 y 02',
-            comunaID: 2,
+            title: 'Comunas 01 y 02 ',
+            comunaID: 1,
             comunaIncludes: "Retiro, San Nicolás, Puerto Madero, San Telmo, Montserrat y Constitución",
-            comunaParaghy: "La Comuna 1 está integrada por los 	barrios de  Retiro, San Nicolás, Puerto Madero, San Telmo, Montserrat y Constitución."
+            comunaParaghy: "La Comuna 1 está integrada por los 	barrios de  Retiro, San Nicolás, Puerto Madero, San Telmo, Montserrat y Constitución.",
         })
     },
     comunasCABA1: (req, res) => {
         res.render('products/productsXComuna', {
-            title: 'Productos Comuna 02 y 03'
+            title: 'Comunas 01 y 02 ',
+            comunaID: 2,
+            comunaIncludes: "Recoleta",
         })
     },
     comunasCABA2: (req, res) => {
@@ -93,4 +95,5 @@ let controller = {
         })
     },
 }
+
 module.exports = controller
